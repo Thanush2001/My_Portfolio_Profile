@@ -314,7 +314,8 @@ section {
 .about-container .left-about {
   padding-right: 5rem;
 }
-.about-container .left-about p {
+.about-container .left-about p 
+{
   line-height: 2rem;
   text-align: justify;
   padding: 1rem;
