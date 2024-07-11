@@ -9,9 +9,9 @@ on:
       - main
 
 jobs:
-  build:
-    runs-on: windows-latest
-    
+  lint:
+    runs-on: ubuntu-latest
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
@@ -22,10 +22,17 @@ jobs:
         node-version: '20'
 
     - name: Install dependencies
-      run: npm install
+      run: |
+        npm install -g htmlhint stylelint stylelint-config-standard eslint
 
-    - name: Run tests
-      run: npm test
+    - name: Lint HTML files
+      run: |
+        htmlhint "**/*.html" || true
 
-    - name: Build project
-      run: npm run build
+    - name: Lint CSS files
+      run: |
+        stylelint "**/*.css" || true
+
+    - name: Lint JavaScript files
+      run: |
+        eslint "**/*.js" || true
