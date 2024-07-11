@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  build:
+  lint:
     runs-on: windows-latest
 
     steps:
@@ -21,11 +21,20 @@ jobs:
       with:
         node-version: '20'
 
-    - name: Install dependencies
-      run: npm install
+    - name: Install HTMLHint
+      run: npm install -g htmlhint
 
-    - name: Run tests
-      run: npm test
+    - name: Install stylelint
+      run: npm install -g stylelint stylelint-config-standard
 
-    - name: Build project
-      run: npm run build
+    - name: Install ESLint
+      run: npm install -g eslint
+
+    - name: Lint HTML files
+      run: htmlhint "**/*.html"
+
+    - name: Lint CSS files
+      run: stylelint "**/*.css"
+
+    - name: Lint JavaScript files
+      run: eslint "**/*.js"
