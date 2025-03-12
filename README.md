@@ -2,7 +2,7 @@
 
 Portfolio website built using HTML5, CSS3, JavaScript, and jQuery.
 
-<a href="https://thanush2001.github.io/My_Portfolio_Profile/index.html/" target="_blank">**Visit Now** 🚀</a>
+<a href="https://thanush2001.github.io/My_Portfolio_Profile/index.html" target="_blank">**Visit Now** 🚀</a>
 
 ## 📌 Tech Stack
 
