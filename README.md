@@ -13,7 +13,7 @@ Portfolio website built using HTML5, CSS3, JavaScript, and jQuery.
 
 ### Extras :
 
-Particle.js, Typed.js, Tilt.js, Scroll Reveal, Tawk.to, Font Awesome, and JSON
+Particle.js, Typed.js, Scroll Reveal, Font Awesome, and JSON
 
 ## 📌 Sneak Peek of Main Page 🙈 :
 <!--
